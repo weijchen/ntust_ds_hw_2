@@ -68,14 +68,6 @@ public:
         is_served = served;
     }
 
-    // Customer(int arrival, int service, int allowable_waiting)
-    //     : arrival_time(arrival),
-    //       service_time(service),
-    //       allowable_waiting_time(allowable_waiting){
-    //         cout << "arrival time: " << arrival_time << endl;
-    //         cout << "service time: " << service_time << endl;
-    //         cout << "allowable waiting time: " << allowable_waiting_time << endl;
-    //       };
 };
 
 #endif
