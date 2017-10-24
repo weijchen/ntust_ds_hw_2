@@ -8,7 +8,7 @@
 #include "client.h"
 #include "service.cpp"
 
-const int MAX_CLIENT = 6;
+const int MAX_CLIENT = 10;
 
 int main()
 {
