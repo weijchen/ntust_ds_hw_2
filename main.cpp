@@ -15,7 +15,7 @@ int main()
     Client result[MAX_CLIENT];
 
     // Create client queue array.
-    cout << "Please enter time values of each client in order of: ";
+    cout << "Please enter time values of each client in order of: " << endl;
     cout << "Arrival Time, Service Time and Allowable Waiting Time." << endl;
     cout << "And separate time values by comma(,)." << endl;
     cout << "For example, ";
