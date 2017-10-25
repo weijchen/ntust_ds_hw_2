@@ -19,7 +19,7 @@ public:
     {
         user_id = customer_id;
         string time_string;
-        cout << "Enter times for user[" << customer_id << "]:";
+        cout << "Enter times for client[" << customer_id << "]:";
         cin >> time_string;
 
         string delimiter = ",";
@@ -44,7 +44,7 @@ public:
 
     void print_info()
     {
-        cout << "User: " << user_id << ", ";
+        cout << "Client: " << user_id << ", ";
         cout << "Arrival Time: " << arrival_time << ", ";
         cout << "Service Time: " << service_time << ", ";
         cout << "Allowable Waiting Time: " << allowable_waiting_time << endl;
@@ -56,7 +56,7 @@ public:
         if (is_served == true) { served_result = "Yes"; }
         else { served_result = "No"; }
 
-        cout << "User: " << user_id << ", ";
+        cout << "Client: " << user_id << ", ";
         cout << "Served or not?: " << served_result;
         if (is_served) { cout << ", " << "Departure Time: " << departure_time; }
         cout << endl;
@@ -68,14 +68,6 @@ public:
         is_served = served;
     }
 
-    // Customer(int arrival, int service, int allowable_waiting)
-    //     : arrival_time(arrival),
-    //       service_time(service),
-    //       allowable_waiting_time(allowable_waiting){
-    //         cout << "arrival time: " << arrival_time << endl;
-    //         cout << "service time: " << service_time << endl;
-    //         cout << "allowable waiting time: " << allowable_waiting_time << endl;
-    //       };
 };
 
 #endif
