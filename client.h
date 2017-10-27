@@ -15,18 +15,14 @@ public:
     int departure_time;
     bool is_served;
 
-    void create_client(int customer_id)
+    void create_client(int customer_id, string time_string, string delimiter=",")
     {
         user_id = customer_id;
-        string time_string;
-        cout << "Enter times for client[" << customer_id << "]:";
-        cin >> time_string;
-
-        string delimiter = ",";
         size_t pos = 0;
         string token;
         int count = 0;
         int TIME_NUMBER = 3; // arrival time, service time and allowable waiting time.
+
         // Split input string
         while ((pos = time_string.find(delimiter)) != std::string::npos && count < TIME_NUMBER - 1)
         {
