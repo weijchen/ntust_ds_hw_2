@@ -27,6 +27,7 @@ g++ (C++11)
 
 ```shell
 // 1. 執行程式，請依序輸入 arrival time、 service time 和 allowable waiting time，並用逗號隔開。
+//    另外，任何時間如果想停止輸入，輸入 -1 即可。
 $ ./hw2.exe
 Please enter time values of each client in order of:
 Arrival Time, Service Time and Allowable Waiting Time.
@@ -51,7 +52,6 @@ Client: 3, Served or not?: No
 Client: 4, Served or not?: Yes, Departure Time: 20
 Client: 5, Served or not?: Yes, Departure Time: 17
 Client: 6, Served or not?: No
-
 ```
 
 
